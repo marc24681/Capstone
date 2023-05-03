@@ -1,16 +1,16 @@
 
 function getValue() {
     // Get the radio buttons
-    var qu1 = document.getElementsByName('question1');
-    var qu2 = document.getElementsByName('question2');
-    var qu3 = document.getElementsByName('question3');
-    var qu4 = document.getElementsByName('question4');
-    var qu5 = document.getElementsByName('question5');
-    var qu6 = document.getElementsByName('question6');
-    var qu7 = document.getElementsByName('question7');
-    var qu8 = document.getElementsByName('question8');
-    var qu9 = document.getElementsByName('question9');
-    var qu10 = document.getElementsByName('question10');
+    var qu1 = document.getElementsByName('question1').value;
+    var qu2 = document.getElementsByName('question2').value;
+    var qu3 = document.getElementsByName('question3').value;
+    var qu4 = document.getElementsByName('question4').value;
+    var qu5 = document.getElementsByName('question5').value;
+    var qu6 = document.getElementsByName('question6').value;
+    var qu7 = document.getElementsByName('question7').value;
+    var qu8 = document.getElementsByName('question8').value;
+    var qu9 = document.getElementsByName('question9').value;
+    var qu10 = document.getElementsByName('question10').value;
     // Initialize the total
     var total = 0;
   
