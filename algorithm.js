@@ -15,5 +15,5 @@ function getValue() {
     const totalScore = q1 + q2 + q3 + q4 + q5 + q6 + q7 + q8 + q9 +q10;
     document.getElementById('score').innerHTML = totalScore;
       
-    window.location.href = "answer.html?total=" + total;
+    window.location.href = "answer.html" + totalScore;
 }
