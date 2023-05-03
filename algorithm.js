@@ -2,17 +2,19 @@
 function getValue() {
     // Get the radio buttons
    
-    var q1 = parseInt(localStorage.getItem("q1"));
-    var q2 = parseInt(localStorage.getItem("q2"));
-    var q3 = parseInt(localStorage.getItem("q3"));
-    var q4 = parseInt(localStorage.getItem("q4"));
-    var q5 = parseInt(localStorage.getItem("q5"));
-    var q6 = parseInt(localStorage.getItem("q6"));
-    var q7 = parseInt(localStorage.getItem("q7"));
-    var q8 = parseInt(localStorage.getItem("q8"));
-    var q9 = parseInt(localStorage.getItem("q9"));
-    var q10 = parseInt(localStorage.getItem("q10"));
-    var totalScore = q1 + q2 + q3 + q4 + q5 + q6 + q7 + q8 + q9 +q10;
+    const q1 = parseInt(document.querySelector('input[name="question1"]:checked').value);
+	const q2 = parseInt(document.querySelector('input[name="question2"]:checked').value);
+    const q3 = parseInt(document.querySelector('input[name="question3"]:checked').value);
+	const q4 = parseInt(document.querySelector('input[name="question4"]:checked').value);
+    const q5 = parseInt(document.querySelector('input[name="question5"]:checked').value);
+	const q6 = parseInt(document.querySelector('input[name="question6"]:checked').value);
+    const q7 = parseInt(document.querySelector('input[name="question7"]:checked').value);
+	const q8 = parseInt(document.querySelector('input[name="question8"]:checked').value);
+    const q9 = parseInt(document.querySelector('input[name="question9"]:checked').value);
+	const q10 = parseInt(document.querySelector('input[name="question10"]:checked').value);
+    
+			
+    const totalScore = q1 + q2 + q3 + q4 + q5 + q6 + q7 + q8 + q9 +q10;
     document.getElementById('score').innerHTML = totalScore;
       
     
