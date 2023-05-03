@@ -15,7 +15,13 @@ function getValue() {
     
 			
     const totalScore = q1 + q2 + q3 + q4 + q5 + q6 + q7 + q8 + q9 +q10;
-    document.getElementById('score').innerHTML = totalScore;
+    
+    if (totalScore > 20){
+        document.getElementById('score').innerHTML = "You are in danger";
+    } else
+    {
+        document.getElementById('score').innerHTML = "You are safe";
+    }
       
     
 }
