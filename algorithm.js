@@ -12,7 +12,7 @@ function getValue() {
     var q8 = parseInt(localStorage.getItem("q8"));
     var q9 = parseInt(localStorage.getItem("q9"));
     var q10 = parseInt(localStorage.getItem("q10"));
-    const totalScore = q1 + q2 + q3 + q4 + q5 + q6 + q7 + q8 + q9 +q10;
+    var totalScore = q1 + q2 + q3 + q4 + q5 + q6 + q7 + q8 + q9 +q10;
     document.getElementById('score').innerHTML = totalScore;
       
     
