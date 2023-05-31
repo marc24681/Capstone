@@ -47,51 +47,24 @@ ul.menu {
     width: 30%;
     height: 30%;
   }
-  
-/* CSS Styles for Centering and Animation */
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  .text {
-    opacity: 0;
-    animation: fade-in 2s forwards;
-  }
 
- @keyframes fade-in {
-      0% {
-        opacity: 0;
+    /*Background color*/
+
+    body {
+        background: linear-gradient(135deg, #c7ecee, #a2d9ce);
+        background-size: 400% 400%;
+        animation: gradientTransition 10s ease infinite;
       }
-      100% {
-        opacity: 1;
+    
+      
+      @keyframes gradientTransition {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
       }
-    }
-  
-
-  /*Background color*/
-
-  body {
-    background: linear-gradient(135deg, #c7ecee, #a2d9ce);
-    background-size: 400% 400%;
-    animation: gradientTransition 10s ease infinite;
-  }
-
-  
-  @keyframes gradientTransition {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-  
-  
-  
-  
