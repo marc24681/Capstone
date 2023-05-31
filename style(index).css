@@ -42,9 +42,9 @@ ul.menu {
     padding: 12px 16px;
   }
 
-  .logo {
-    width: 10%;
-    height: 10%;
+  img {
+    width: 30%;
+    height: 30%;
   }
   
 /* CSS Styles for Centering and Animation */
