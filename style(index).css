@@ -9,6 +9,25 @@
   .text {
     animation: fadeIn 2s ease-in;
   }
+
+  body {
+    background: linear-gradient(135deg, #c7ecee, #a2d9ce);
+    background-size: 400% 400%;
+    animation: gradientTransition 10s ease infinite;
+  }
+  
+  @keyframes gradientTransition {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
   
   @keyframes fadeIn {
     0% {
