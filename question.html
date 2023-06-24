@@ -14,24 +14,44 @@
 			margin-top: 20px;
 			font-size: 24px;
 		}
-
 	</style>
+
+<link rel="stylesheet" href="bootstrap.min.css">
+<script src="bootstrap.min.js"></script>
 </head>
 
 <body>
 
-    <ul class="menu">
-        <li><a href="index.html"><img src="new logo guarddv tech.jpg" alt="logo"></a></li>
-        <li class="phone-number">Phone: 123-456-7890</li>
-        <li class="dropdown">
-            <a href="#">Menu</a>
-            <div class="dropdown-content">
-              <a href="#">Numbers</a>
-              <a href="question.html">Test</a>
-              <a href="#">Goal</a>
-            </div>
-          </li>
-      </ul>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="index.html"><img src="new logo guarddv tech.jpg" alt="logo"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+		  <ul class="navbar-nav">
+			<li class="nav-item active">
+			  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#">Features</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#">Pricing</a>
+			</li>
+			<li class="nav-item dropdown">
+			  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Dropdown link
+			  </a>
+			  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+				<a class="dropdown-item" href="#">Numbers</a>
+				<a class="dropdown-item" href="question.html">Test</a>
+				<a class="dropdown-item" href="#">Goal</a>
+			  </div>
+			</li>
+		  </ul>
+		</div>
+	  </nav>
+    
 
     <form id="questionnaire" class="fade-in-text">
         <div>
