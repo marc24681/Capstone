@@ -15,27 +15,6 @@
 			font-size: 24px;
 		}
 
-		.danger {
-			color: red;
-			animation: dangerAnimation 1s infinite;
-		}
-
-		.safe {
-			color: green;
-			animation: safeAnimation 1s infinite;
-		}
-
-		@keyframes dangerAnimation {
-			0% { transform: scale(1); color: red; }
-			50% { transform: scale(1.2); color: red; }
-			100% { transform: scale(1); color: red; }
-		}
-
-		@keyframes safeAnimation {
-			0% { transform: rotate(0); color: green; }
-			50% { transform: rotate(180deg); color: green; }
-			100% { transform: rotate(0); color: green; }
-		}
 	</style>
 </head>
 
@@ -168,7 +147,7 @@
 		<button type="submit">Submit</button>
 	</form>
 
-	<h1 id="result"></h1>
+	<h1 id="result" class="result"></h1>
    
     <script src="algorithm.js"></script>
         

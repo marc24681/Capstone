@@ -19,10 +19,14 @@ form.addEventListener('submit', function(e) {
 
 	if (total > 20) {
 		resultElement.innerText = 'You are in danger.';
-		resultElement.classList.add('danger');
+		resultElement.setAttribute('id','danger');
+        
+
+        
 	} else {
 		resultElement.innerText = 'You are safe.';
-		resultElement.classList.add('safe');
+		resultElement.setAttribute('id','safe');
+        
 	}
 
 	form.style.display = 'none';

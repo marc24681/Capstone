@@ -52,6 +52,31 @@ ul.menu {
     opacity: 0;
     animation: fade-in 2s forwards;
   }
+
+  #danger {
+    text-align: center;
+    color: red;
+    animation: dangerAnimation 1s infinite;
+  }
+
+  #safe {
+    text-align: center;
+    color: blue;
+    animation: safeAnimation 1s infinite;
+  }
+
+  
+  @keyframes dangerAnimation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2);}
+    100% { transform: scale(1);}
+  }
+
+  @keyframes safeAnimation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2);}
+    100% { transform: scale(1);}
+  }
   
   @keyframes fade-in {
     0% {
