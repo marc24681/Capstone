@@ -1,8 +1,8 @@
-const form = document.getElementById('questionnaire');
-const resultElement = document.getElementById('result');
 
-form.addEventListener('submit', function(e) {
-	e.preventDefault();
+
+function Submit() {
+	const form = document.getElementById('questionnaire');
+    const resultElement = document.getElementById('result');
 
 	const q1 = parseInt(form.elements['q1'].value);
 	const q2 = parseInt(form.elements['q2'].value);
@@ -47,5 +47,33 @@ form.addEventListener('submit', function(e) {
         }, 50);
     }
 
-});
+}
 
+/* Make questions appear and disapear*/
+var currentQuestion = 1;
+var totalQuestions = 10;
+
+    function displayQuestion() {
+      var question = document.getElementById("question" + currentQuestion);
+      question.style.display = "block";
+      question.style.marginTop = "150px";
+      question.style.alignItems = "center";
+      question.style.justifyContent= "center";
+    }
+
+    function hideQuestion() {
+      var question = document.getElementById("question" + currentQuestion);
+      question.style.display = "none";
+      question.style.marginTop = "150px";
+      question.style.alignItems = "center";
+      question.style.justifyContent= "center";
+    }
+
+    function nextQuestion() {
+      hideQuestion();
+      currentQuestion++;
+      
+      if (currentQuestion <= totalQuestions) {
+        displayQuestion();
+      }
+    }

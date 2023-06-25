@@ -70,6 +70,7 @@ ul.menu {
     margin-top: 150px;
     justify-content: center;
     align-items: center;
+    display: none;
     
   }
 
