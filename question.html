@@ -54,117 +54,173 @@
     
 
     <form id="questionnaire" class="fade-in-text">
-        <div>
-			<label>1. He makes me feel unsafe even in my own home.</label>
-			<div>
-				<input type="radio" name="q1" value="1">Disagree Strongly</input><br>
-				<input type="radio" name="q1" value="2">Disagree Somewhat</input><br>
-				<input type="radio" name="q1" value="3">Disagree a little</input><br>
-				<input type="radio" name="q1" value="4">Agree a little</input><br>
-				<input type="radio" name="q1" value="5">Agree Somewhat</input><br>
-				<input type="radio" name="q1" value="6">Agree Strongly</input><br>
-			</div>
-		</div>
-		<div>
-			<label>2. I feel ashamed of the things he does to me.</label>
-			<div>
-				<input type="radio" name="q2" value="1">Disagree Strongly</input><br>
-				<input type="radio" name="q2" value="2">Disagree Somewhat</input><br>
-				<input type="radio" name="q2" value="3">Disagree a little</input><br>
-				<input type="radio" name="q2" value="4">Agree a little</input><br>
-				<input type="radio" name="q2" value="5">Agree Somewhat</input><br>
-				<input type="radio" name="q2" value="6">Agree Strongly</input><br>
-			</div>
-		</div>
 
-        <label>3. I try not to rock the boat because I am afraid of what he might do.</label>
-			<div>
-				<input type="radio" name="q3" value="1">Disagree Strongly</input><br>
-				<input type="radio" name="q3" value="2">Disagree Somewhat</input><br>
-				<input type="radio" name="q3" value="3">Disagree a little</input><br>
-				<input type="radio" name="q3" value="4">Agree a little</input><br>
-				<input type="radio" name="q3" value="5">Agree Somewhat</input><br>
-				<input type="radio" name="q3" value="6">Agree Strongly</input><br>
+		<div class="card-deck">
+			<div class="card" >
+			  <div class="card-body">
+				<div >
+					<label style="text-align: center; ">1. He makes me feel unsafe even in my own home.</label>
+					<div id="question1">
+						<input type="radio" name="q1" value="1">Disagree Strongly</input><br>
+						<input type="radio" name="q1" value="2">Disagree Somewhat</input><br>
+						<input type="radio" name="q1" value="3">Disagree a little</input><br>
+						<input type="radio" name="q1" value="4">Agree a little</input><br>
+						<input type="radio" name="q1" value="5">Agree Somewhat</input><br>
+						<input type="radio" name="q1" value="6">Agree Strongly</input><br>
+						<button type="submit" id="submit1">Submit</button>
+					</div>
+				</div>
+			  </div>
 			</div>
-		</div>
+			<div class="card" style="display: none;">
+			  <div class="card-body">
+				<div >
+					<label>2. I feel ashamed of the things he does to me.</label>
+				
+					<div id="question2">
+						<input type="radio" name="q2" value="1">Disagree Strongly</input><br>
+						<input type="radio" name="q2" value="2">Disagree Somewhat</input><br>
+						<input type="radio" name="q2" value="3">Disagree a little</input><br>
+						<input type="radio" name="q2" value="4">Agree a little</input><br>
+						<input type="radio" name="q2" value="5">Agree Somewhat</input><br>
+						<input type="radio" name="q2" value="6">Agree Strongly</input><br>
+						<button type="submit" id="submit2">Submit</button>
+					</div>
+				</div>
+			  </div>
+			</div>
+			<div class="card" style="display: none;">
+				<div class="card-body">
+					<div >
+						<label>3. I try not to rock the boat because I am afraid of what he might do.</label>
+							<div id="question3">
+								<input type="radio" name="q3" value="1">Disagree Strongly</input><br>
+								<input type="radio" name="q3" value="2">Disagree Somewhat</input><br>
+								<input type="radio" name="q3" value="3">Disagree a little</input><br>
+								<input type="radio" name="q3" value="4">Agree a little</input><br>
+								<input type="radio" name="q3" value="5">Agree Somewhat</input><br>
+								<input type="radio" name="q3" value="6">Agree Strongly</input><br>
+								<button type="submit" id="submit3">Submit</button>
+							</div>
+						</div>
+				</div>
+			  </div>
+			  <div class="card" style="display: none;">
+				<div class="card-body">
+					<div >
+						<label>4. I feel like I am programmed to react in a certain way to him.</label>
+							<div id="question4">
+								<input type="radio" name="q4" value="1">Disagree Strongly</input><br>
+								<input type="radio" name="q4" value="2">Disagree Somewhat</input><br>
+								<input type="radio" name="q4" value="3">Disagree a little</input><br>
+								<input type="radio" name="q4" value="4">Agree a little</input><br>
+								<input type="radio" name="q4" value="5">Agree Somewhat</input><br>
+								<input type="radio" name="q4" value="6">Agree Strongly</input><br>
+								<button type="submit" id="submit4">Submit</button>
+							</div>
+						</div>
+				</div>
+			  </div>
+			  <div class="card" style="display: none;">
+				<div class="card-body">
+					<div >
+						<label>5. I fell like he keeps me prisoner.</label>
+							<div id="question5">
+								<input type="radio" name="q5" value="1">Disagree Strongly</input><br>
+								<input type="radio" name="q5" value="2">Disagree Somewhat</input><br>
+								<input type="radio" name="q5" value="3">Disagree a little</input><br>
+								<input type="radio" name="q5" value="4">Agree a little</input><br>
+								<input type="radio" name="q5" value="5">Agree Somewhat</input><br>
+								<input type="radio" name="q5" value="6">Agree Strongly</input><br>
+								<button type="submit" id="submit5">Submit</button>
+							</div>
+						</div>
+				</div>
+			  </div>
+			  <div class="card" style="display: none;">
+				<div class="card-body">
+					<div >
+						<label>6. He makes me feel like I have no corntol over my life, no power, no protection.</label>
+							<div id="question6">
+								<input type="radio" name="q6" value="1">Disagree Strongly</input><br>
+								<input type="radio" name="q6" value="2">Disagree Somewhat</input><br>
+								<input type="radio" name="q6" value="3">Disagree a little</input><br>
+								<input type="radio" name="q6" value="4">Agree a little</input><br>
+								<input type="radio" name="q6" value="5">Agree Somewhat</input><br>
+								<input type="radio" name="q6" value="6">Agree Strongly</input><br>
+								<button type="submit" id="submit6">Submit</button>
+							</div>
+						</div>
+				</div>
+			  </div>
+			  <div class="card" style="display: none;">
+				<div class="card-body">
+					<div >
+						<label>7. I hide the truth from others because I'm afraid not to.</label>
+							<div id="question7">
+								<input type="radio" name="q7" value="1">Disagree Strongly</input><br>
+								<input type="radio" name="q7" value="2">Disagree Somewhat</input><br>
+								<input type="radio" name="q7" value="3">Disagree a little</input><br>
+								<input type="radio" name="q7" value="4">Agree a little</input><br>
+								<input type="radio" name="q7" value="5">Agree Somewhat</input><br>
+								<input type="radio" name="q7" value="6">Agree Strongly</input><br>
+								<button type="submit" id="submit7">Submit</button>
+							</div>
+						</div>
+				</div>
+			  </div>
+			  <div class="card" style="display: none;">
+				<div class="card-body">
+					<div >
+						<label>8. I feel owned and controlled by him.</label>
+							<div id="question8">
+								<input type="radio" name="q8" value="1">Disagree Strongly</input><br>
+								<input type="radio" name="q8" value="2">Disagree Somewhat</input><br>
+								<input type="radio" name="q8" value="3">Disagree a little</input><br>
+								<input type="radio" name="q8" value="4">Agree a little</input><br>
+								<input type="radio" name="q8" value="5">Agree Somewhat</input><br>
+								<input type="radio" name="q8" value="6">Agree Strongly</input><br>
+								<button type="submit" id="submit8">Submit</button>
+							</div>
+						</div>
+				</div>
+			  </div>
 
-        <label>4. I feel like I am programmed to react in a certain way to him.</label>
-			<div>
-				<input type="radio" name="q4" value="1">Disagree Strongly</input><br>
-				<input type="radio" name="q4" value="2">Disagree Somewhat</input><br>
-				<input type="radio" name="q4" value="3">Disagree a little</input><br>
-				<input type="radio" name="q4" value="4">Agree a little</input><br>
-				<input type="radio" name="q4" value="5">Agree Somewhat</input><br>
-				<input type="radio" name="q4" value="6">Agree Strongly</input><br>
-			</div>
-		</div>
+			  <div class="card" style="display: none;">
+				<div class="card-body">
+					<div >
+						<label>9. He can scare me without laying a hand on me.</label>
+							<div id="question9">
+								<input type="radio" name="q9" value="1">Disagree Strongly</input><br>
+								<input type="radio" name="q9" value="2">Disagree Somewhat</input><br>
+								<input type="radio" name="q9" value="3">Disagree a little</input><br>
+								<input type="radio" name="q9" value="4">Agree a little</input><br>
+								<input type="radio" name="q9" value="5">Agree Somewhat</input><br>
+								<input type="radio" name="q9" value="6">Agree Strongly</input><br>
+								<button type="submit" id="submit9">Submit</button>
+							</div>
+						</div>
+				</div>
+			  </div>
 
-        <label>5. I fell like he keeps me prisoner.</label>
-			<div>
-				<input type="radio" name="q5" value="1">Disagree Strongly</input><br>
-				<input type="radio" name="q5" value="2">Disagree Somewhat</input><br>
-				<input type="radio" name="q5" value="3">Disagree a little</input><br>
-				<input type="radio" name="q5" value="4">Agree a little</input><br>
-				<input type="radio" name="q5" value="5">Agree Somewhat</input><br>
-				<input type="radio" name="q5" value="6">Agree Strongly</input><br>
-			</div>
-		</div>
-
-        <label>6. He makes me feel like I have no corntol over my life, no power, no protection.</label>
-			<div>
-				<input type="radio" name="q6" value="1">Disagree Strongly</input><br>
-				<input type="radio" name="q6" value="2">Disagree Somewhat</input><br>
-				<input type="radio" name="q6" value="3">Disagree a little</input><br>
-				<input type="radio" name="q6" value="4">Agree a little</input><br>
-				<input type="radio" name="q6" value="5">Agree Somewhat</input><br>
-				<input type="radio" name="q6" value="6">Agree Strongly</input><br>
-			</div>
-		</div>
-
-        <label>7. I hide the truth from others because I'm afraid not to.</label>
-			<div>
-				<input type="radio" name="q7" value="1">Disagree Strongly</input><br>
-				<input type="radio" name="q7" value="2">Disagree Somewhat</input><br>
-				<input type="radio" name="q7" value="3">Disagree a little</input><br>
-				<input type="radio" name="q7" value="4">Agree a little</input><br>
-				<input type="radio" name="q7" value="5">Agree Somewhat</input><br>
-				<input type="radio" name="q7" value="6">Agree Strongly</input><br>
-			</div>
-		</div>
-
-        <label>8. I feel owned and controlled by him.</label>
-			<div>
-				<input type="radio" name="q8" value="1">Disagree Strongly</input><br>
-				<input type="radio" name="q8" value="2">Disagree Somewhat</input><br>
-				<input type="radio" name="q8" value="3">Disagree a little</input><br>
-				<input type="radio" name="q8" value="4">Agree a little</input><br>
-				<input type="radio" name="q8" value="5">Agree Somewhat</input><br>
-				<input type="radio" name="q8" value="6">Agree Strongly</input><br>
-			</div>
-		</div>
-
-        <label>9. He can scare me without laying a hand on me.</label>
-			<div>
-				<input type="radio" name="q9" value="1">Disagree Strongly</input><br>
-				<input type="radio" name="q9" value="2">Disagree Somewhat</input><br>
-				<input type="radio" name="q9" value="3">Disagree a little</input><br>
-				<input type="radio" name="q9" value="4">Agree a little</input><br>
-				<input type="radio" name="q9" value="5">Agree Somewhat</input><br>
-				<input type="radio" name="q9" value="6">Agree Strongly</input><br>
-			</div>
-		</div>
-
-        <label>10. He has a look that goes staright through me and terrifies me.</label>
-			<div>
-				<input type="radio" name="q10" value="1">Disagree Strongly</input><br>
-				<input type="radio" name="q10" value="2">Disagree Somewhat</input><br>
-				<input type="radio" name="q10" value="3">Disagree a little</input><br>
-				<input type="radio" name="q10" value="4">Agree a little</input><br>
-				<input type="radio" name="q10" value="5">Agree Somewhat</input><br>
-				<input type="radio" name="q10" value="6">Agree Strongly</input><br>
-			</div>
-		</div>
-		<button type="submit">Submit</button>
+			  <div class="card" style="display: none;">
+				<div class="card-body">
+					<div >
+						<label>10. He has a look that goes staright through me and terrifies me.</label>
+							<div id="question10">
+								<input type="radio" name="q10" value="1">Disagree Strongly</input><br>
+								<input type="radio" name="q10" value="2">Disagree Somewhat</input><br>
+								<input type="radio" name="q10" value="3">Disagree a little</input><br>
+								<input type="radio" name="q10" value="4">Agree a little</input><br>
+								<input type="radio" name="q10" value="5">Agree Somewhat</input><br>
+								<input type="radio" name="q10" value="6">Agree Strongly</input><br>
+								<button type="submit" id="submit10">Submit</button>
+							</div>
+						</div>
+				</div>
+			  </div>
+	</div>
+		
 	</form>
 
 	<h1 id="result" class="result"></h1>

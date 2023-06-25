@@ -65,6 +65,16 @@ ul.menu {
     animation: safeAnimation 1s infinite;
   }
 
+  .card{
+    
+    margin-top: 150px;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  
+
   
   @keyframes dangerAnimation {
     0% { transform: scale(1); }
