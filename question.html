@@ -51,32 +51,29 @@
 		  </ul>
 		</div>
 	  </nav>
-    
-
-    <div id="questionnaire" class="fade-in-text">
-
-		<div class="card-deck" id="questions">
-
-			<div class="card" id="question1">
-			  <div class="card-body">
-				<div class="fade-in-text">
-					<label >1. He makes me feel unsafe even in my own home.</label>
-					<div >
-						<input type="radio" name="q1" value="1">Disagree Strongly</input><br>
-						<input type="radio" name="q1" value="2">Disagree Somewhat</input><br>
-						<input type="radio" name="q1" value="3">Disagree a little</input><br>
-						<input type="radio" name="q1" value="4">Agree a little</input><br>
-						<input type="radio" name="q1" value="5">Agree Somewhat</input><br>
-						<input type="radio" name="q1" value="6">Agree Strongly</input><br>
-						<button onclick="nextQuestion()">Next</button>
-					</div>
+	  
+	  <form id="questionnaire" class="fade-in-text">
+	  <div id="questions">
+	  <div class="card" id="question1" style="width: 50rem;">
+		<div class="card-body">
+			<div class="fade-in-text">
+				<label >1. He makes me feel unsafe even in my own home.</label>
+				<div >
+					<input type="radio" name="q1" value="1">Disagree Strongly</input><br>
+					<input type="radio" name="q1" value="2">Disagree Somewhat</input><br>
+					<input type="radio" name="q1" value="3">Disagree a little</input><br>
+					<input type="radio" name="q1" value="4">Agree a little</input><br>
+					<input type="radio" name="q1" value="5">Agree Somewhat</input><br>
+					<input type="radio" name="q1" value="6">Agree Strongly</input><br>
+					
 				</div>
-			  </div>
 			</div>
-			<div class="card" id="question2"style="display: none;">
-			  <div class="card-body">
-				<div class="fade-in-text">
-					<label>2. I feel ashamed of the things he does to me.</label>
+		  </div>
+	  </div>
+	  <div class="card" id="question2" style="width: 50rem;display: none;">
+		<div class="card-body">
+			<div class="fade-in-text">
+				<label>2. I feel ashamed of the things he does to me.</label>
 				
 					<div class="fade-in-text">
 						<input type="radio" name="q2" value="1">Disagree Strongly</input><br>
@@ -85,47 +82,47 @@
 						<input type="radio" name="q2" value="4">Agree a little</input><br>
 						<input type="radio" name="q2" value="5">Agree Somewhat</input><br>
 						<input type="radio" name="q2" value="6">Agree Strongly</input><br>
-						<button onclick="nextQuestion()">Next</button>
+						
+					</div>
+			</div>
+		  </div>
+	  </div>
+	  <div class="card" id="question3" style="width: 50rem;display: none;">
+		<div class="card-body">
+			<div class="fade-in-text" id="question3">
+				<label>3. I try not to rock the boat because I am afraid of what he might do.</label>
+					<div >
+						<input type="radio" name="q3" value="1">Disagree Strongly</input><br>
+						<input type="radio" name="q3" value="2">Disagree Somewhat</input><br>
+						<input type="radio" name="q3" value="3">Disagree a little</input><br>
+						<input type="radio" name="q3" value="4">Agree a little</input><br>
+						<input type="radio" name="q3" value="5">Agree Somewhat</input><br>
+						<input type="radio" name="q3" value="6">Agree Strongly</input><br>
+						
 					</div>
 				</div>
-			  </div>
+		  </div>
+	  </div>
+	  <div class="card" id="question4" style="width: 50rem;display: none;">
+		<div class="card-body">
+			<div class="fade-in-text">
+				<label>4. I feel like I am programmed to react in a certain way to him.</label>
+						<div >
+							<input type="radio" name="q4" value="1">Disagree Strongly</input><br>
+							<input type="radio" name="q4" value="2">Disagree Somewhat</input><br>
+							<input type="radio" name="q4" value="3">Disagree a little</input><br>
+							<input type="radio" name="q4" value="4">Agree a little</input><br>
+							<input type="radio" name="q4" value="5">Agree Somewhat</input><br>
+							<input type="radio" name="q4" value="6">Agree Strongly</input><br>
+								
+						</div>
 			</div>
-			<div class="card" id="question3" style="display: none;" >
-				<div class="card-body">
-					<div class="fade-in-text">
-						<label>3. I try not to rock the boat because I am afraid of what he might do.</label>
-							<div >
-								<input type="radio" name="q3" value="1">Disagree Strongly</input><br>
-								<input type="radio" name="q3" value="2">Disagree Somewhat</input><br>
-								<input type="radio" name="q3" value="3">Disagree a little</input><br>
-								<input type="radio" name="q3" value="4">Agree a little</input><br>
-								<input type="radio" name="q3" value="5">Agree Somewhat</input><br>
-								<input type="radio" name="q3" value="6">Agree Strongly</input><br>
-								<button onclick="nextQuestion()">Next</button>
-							</div>
-						</div>
-				</div>
-			  </div>
-			  <div class="card" id="question4" style="display: none;">
-				<div class="card-body">
-					<div class="fade-in-text">
-						<label>4. I feel like I am programmed to react in a certain way to him.</label>
-							<div >
-								<input type="radio" name="q4" value="1">Disagree Strongly</input><br>
-								<input type="radio" name="q4" value="2">Disagree Somewhat</input><br>
-								<input type="radio" name="q4" value="3">Disagree a little</input><br>
-								<input type="radio" name="q4" value="4">Agree a little</input><br>
-								<input type="radio" name="q4" value="5">Agree Somewhat</input><br>
-								<input type="radio" name="q4" value="6">Agree Strongly</input><br>
-								<button onclick="nextQuestion()">Next</button>
-							</div>
-						</div>
-				</div>
-			  </div>
-			  <div class="card" id="question5" style="display: none;">
-				<div class="card-body">
-					<div class="fade-in-text">
-						<label>5. I fell like he keeps me prisoner.</label>
+		  </div>
+	  </div>
+	  <div class="card" id="question5" style="width: 50rem;display: none;">
+		<div class="card-body">
+			<div class="fade-in-text">
+				<label>5. I fell like he keeps me prisoner.</label>
 							<div >
 								<input type="radio" name="q5" value="1">Disagree Strongly</input><br>
 								<input type="radio" name="q5" value="2">Disagree Somewhat</input><br>
@@ -133,15 +130,15 @@
 								<input type="radio" name="q5" value="4">Agree a little</input><br>
 								<input type="radio" name="q5" value="5">Agree Somewhat</input><br>
 								<input type="radio" name="q5" value="6">Agree Strongly</input><br>
-								<button onclick="nextQuestion()">Next</button>
+								
 							</div>
-						</div>
-				</div>
-			  </div>
-			  <div class="card" id="question6" style="display: none;">
-				<div class="card-body">
-					<div class="fade-in-text">
-						<label>6. He makes me feel like I have no corntol over my life, no power, no protection.</label>
+			</div>
+		  </div>
+	  </div>
+	  <div class="card" id="question6" style="width: 50rem;display: none;">
+		<div class="card-body">
+			<div class="fade-in-text">
+				<label>6. He makes me feel like I have no corntol over my life, no power, no protection.</label>
 							<div >
 								<input type="radio" name="q6" value="1">Disagree Strongly</input><br>
 								<input type="radio" name="q6" value="2">Disagree Somewhat</input><br>
@@ -149,15 +146,15 @@
 								<input type="radio" name="q6" value="4">Agree a little</input><br>
 								<input type="radio" name="q6" value="5">Agree Somewhat</input><br>
 								<input type="radio" name="q6" value="6">Agree Strongly</input><br>
-								<button onclick="nextQuestion()">Next</button>
+								
 							</div>
-						</div>
-				</div>
-			  </div>
-			  <div class="card" id="question7" style="display: none;">
-				<div class="card-body">
-					<div class="fade-in-text">
-						<label>7. I hide the truth from others because I'm afraid not to.</label>
+			</div>
+		  </div>
+	  </div>
+	  <div class="card" id="question7" style="width: 50rem;display: none;">
+		<div class="card-body">
+			<div class="fade-in-text">
+				<label>7. I hide the truth from others because I'm afraid not to.</label>
 							<div >
 								<input type="radio" name="q7" value="1">Disagree Strongly</input><br>
 								<input type="radio" name="q7" value="2">Disagree Somewhat</input><br>
@@ -165,15 +162,15 @@
 								<input type="radio" name="q7" value="4">Agree a little</input><br>
 								<input type="radio" name="q7" value="5">Agree Somewhat</input><br>
 								<input type="radio" name="q7" value="6">Agree Strongly</input><br>
-								<button onclick="nextQuestion()">Next</button>
+								
 							</div>
-						</div>
-				</div>
-			  </div>
-			  <div class="card" id="question8" style="display: none;">
-				<div class="card-body">
-					<div class="fade-in-text">
-						<label>8. I feel owned and controlled by him.</label>
+			</div>
+		  </div>
+	  </div>
+	  <div class="card" id="question8" style="width: 50rem;display: none;">
+		<div class="card-body">
+			<div class="fade-in-text">
+				<label>8. I feel owned and controlled by him.</label>
 							<div >
 								<input type="radio" name="q8" value="1">Disagree Strongly</input><br>
 								<input type="radio" name="q8" value="2">Disagree Somewhat</input><br>
@@ -181,16 +178,15 @@
 								<input type="radio" name="q8" value="4">Agree a little</input><br>
 								<input type="radio" name="q8" value="5">Agree Somewhat</input><br>
 								<input type="radio" name="q8" value="6">Agree Strongly</input><br>
-								<button onclick="nextQuestion()">Next</button>
+								
 							</div>
-						</div>
-				</div>
-			  </div>
-
-			  <div class="card" id="question9" style="display: none;">
-				<div class="card-body">
-					<div class="fade-in-text">
-						<label>9. He can scare me without laying a hand on me.</label>
+			</div>
+		  </div>
+	  </div>
+	  <div class="card" id="question9" style="width: 50rem;display: none;">
+		<div class="card-body">
+			<div class="fade-in-text">
+				<label>9. He can scare me without laying a hand on me.</label>
 							<div >
 								<input type="radio" name="q9" value="1">Disagree Strongly</input><br>
 								<input type="radio" name="q9" value="2">Disagree Somewhat</input><br>
@@ -198,39 +194,44 @@
 								<input type="radio" name="q9" value="4">Agree a little</input><br>
 								<input type="radio" name="q9" value="5">Agree Somewhat</input><br>
 								<input type="radio" name="q9" value="6">Agree Strongly</input><br>
-								<button onclick="nextQuestion()">Next</button>
+								
 							</div>
-						</div>
+			</div>
+		  </div>
+	  </div>
+	  <div class="card" id="question10" style="width: 50rem;display: none;">
+		<div class="card-body">
+			<div class="fade-in-text">
+				<label>10. He has a look that goes staright through me and terrifies me.</label>
+						<div >
+							<input type="radio" name="q10" value="1">Disagree Strongly</input><br>
+							<input type="radio" name="q10" value="2">Disagree Somewhat</input><br>
+							<input type="radio" name="q10" value="3">Disagree a little</input><br>
+							<input type="radio" name="q10" value="4">Agree a little</input><br>
+							<input type="radio" name="q10" value="5">Agree Somewhat</input><br>
+							<input type="radio" name="q10" value="6">Agree Strongly</input><br>
+								
+					</div>
+					
 				</div>
-			  </div>
+			</div>
+		  </div>
+	  </div>
+	</form>
+    
 
-			  <div class="card" id="question10" style="display: none;">
-				<div class="card-body">
-					<div class="fade-in-text">
-						<label>10. He has a look that goes staright through me and terrifies me.</label>
-							<div >
-								<input type="radio" name="q10" value="1">Disagree Strongly</input><br>
-								<input type="radio" name="q10" value="2">Disagree Somewhat</input><br>
-								<input type="radio" name="q10" value="3">Disagree a little</input><br>
-								<input type="radio" name="q10" value="4">Agree a little</input><br>
-								<input type="radio" name="q10" value="5">Agree Somewhat</input><br>
-								<input type="radio" name="q10" value="6">Agree Strongly</input><br>
-								<button onclick="Submit()" id="submit">Submit</button>
-							</div>
-						</div>
-				</div>
-			  </div>
-			  
-	</div>
-	
+<div id="appear">
+	<button onclick="nextQuestion()" id="appear">Next</button>
 </div>
 
+
+
 	<h1 id="result" class="result"></h1>
+
+	
    
     <script src="algorithm.js"></script>
-	<script>
-		displayQuestion();
-	  </script>
+	
         
     
 

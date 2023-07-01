@@ -56,17 +56,13 @@ var totalQuestions = 10;
     function displayQuestion() {
       var question = document.getElementById("question" + currentQuestion);
       question.style.display = "block";
-      question.style.marginTop = "150px";
-      question.style.alignItems = "center";
-      question.style.justifyContent= "center";
+      
     }
 
     function hideQuestion() {
       var question = document.getElementById("question" + currentQuestion);
       question.style.display = "none";
-      question.style.marginTop = "150px";
-      question.style.alignItems = "center";
-      question.style.justifyContent= "center";
+      
     }
 
     function nextQuestion() {
@@ -75,5 +71,12 @@ var totalQuestions = 10;
       
       if (currentQuestion <= totalQuestions) {
         displayQuestion();
+      }else{
+        
+          var nothing = document.getElementById("appear");
+          nothing.style.display = "none";
+          Submit();
+        
       }
+
     }

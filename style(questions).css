@@ -66,17 +66,31 @@ ul.menu {
   }
 
   .card{
-    
+    margin-right: auto;
+    margin-left: auto;
     margin-top: 150px;
     justify-content: center;
     align-items: center;
-    display: none;
+    
     
   }
+/*
+  #appear{
+            display: flex;
+            justify-content: center;
+            margin-left: 50px;
+  }
+*/
 
-  
 
+
+#appear{
+  display: flex;
+  justify-content: center;
   
+}
+
+
   @keyframes dangerAnimation {
     0% { transform: scale(1); }
     50% { transform: scale(1.2);}
